@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="أسئلة شائعة عن حقوق الإنسان مع إجابات مبسطة، وروابط إلى مصادر خارجية موثوقة مثل المفوضية السامية لحقوق الإنسان والأمم المتحدة." />
+  <title>أسئلة شائعة وموارد خارجية — حقوق الإنسان</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Noto Kufi Arabic", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="index.html" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+          <li><a href="timeline.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الخط الزمني</a></li>
+          <li><a href="faq.html" aria-current="page" class="px-3 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition duration-300">أسئلة شائعة</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="index.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+        <li><a href="timeline.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الخط الزمني</a></li>
+        <li><a href="faq.html" aria-current="page" class="block px-4 py-3 rounded-xl font-medium text-blue-700 bg-blue-50 transition duration-300">أسئلة شائعة</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          اسأل وتعلّم
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          أسئلة شائعة <span class="text-blue-700">وموارد خارجية</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          إجابات مبسطة عن الأسئلة الأكثر تكرارًا حول حقوق الإنسان، وروابط
+          إلى مصادر رسمية موثوقة لمن يريد التعمق أكثر.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= الأسئلة الشائعة ================= -->
+    <section id="faq" class="py-20">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">الأسئلة الشائعة</h2>
+          <p class="text-lg leading-9 text-slate-600">اضغط على السؤال لعرض إجابته.</p>
+        </div>
+
+        <div data-reveal data-accordion-group class="space-y-4">
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="true">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="true">
+                <span>ما هي حقوق الإنسان؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  هي الحقوق والحريات الأساسية التي يستحقها كل إنسان لمجرد كونه
+                  إنسانًا: كالحق في الحياة والتعليم وحرية التعبير. لا تُمنح من
+                  أحد ولا يجوز انتزاعها، وهي عالمية ومترابطة وغير قابلة للتجزئة.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>هل الحقوق متساوية للجميع؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  نعم. تنص المادة الثانية من الإعلان العالمي على أن لكل إنسان
+                  جميع الحقوق دون أي تمييز بسبب العرق أو اللون أو الجنس أو
+                  اللغة أو الدين أو الرأي أو الأصل أو الثروة أو أي وضع آخر.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>هل يمكن تقييد بعض الحقوق؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  بعض الحقوق يجوز تنظيمها بشروط صارمة مجتمعة: أن يكون التقييد
+                  بنص قانوني، ولغاية مشروعة، وبقدر الضرورة، ودون تمييز. لكن
+                  حقوقًا أساسية لا تقبل التقييد بأي حال حتى في الطوارئ، مثل
+                  الحق في الحياة وحظر التعذيب وحظر الرق.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>ما الفرق بين الحق والواجب؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  الحق هو ما يستحقه الفرد ويجب على الآخرين احترامه، والواجب هو
+                  ما يلتزم به الفرد تجاه الآخرين والمجتمع. وهما وجهان لعملة
+                  واحدة: فحقك في التعبير يقابله واجبك في احترام سمعة الآخرين،
+                  وقد نصت المادة 29 من الإعلان على أن على كل فرد واجبات نحو مجتمعه.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>هل الإعلان العالمي لحقوق الإنسان ملزم قانونًا؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  الإعلان بذاته ليس معاهدة ملزمة، لكنه اكتسب مكانة كبيرة:
+                  تحوّلت أحكامه إلى معاهدات ملزمة (كالعهدين الدوليين)، ويعتبر
+                  كثير من مبادئه اليوم جزءًا من العرف الدولي الذي يُلزم جميع
+                  الدول.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>ما هي الشرعة الدولية لحقوق الإنسان؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  اسم يُطلق على ثلاث وثائق معًا: الإعلان العالمي لحقوق الإنسان
+                  (1948)، والعهد الدولي الخاص بالحقوق المدنية والسياسية (1966)،
+                  والعهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية
+                  (1966). وهي حجر الأساس لكل القانون الدولي لحقوق الإنسان.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>من يراقب التزام الدول بحقوق الإنسان؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  منظومة متعددة المستويات: داخل الدولة يراقب القضاء والمؤسسات
+                  الوطنية والصحافة والمجتمع المدني؛ ودوليًا يراقب مجلس حقوق
+                  الإنسان (عبر الاستعراض الدوري الشامل) والهيئات التعاهدية العشر
+                  والمفوضية السامية، إضافة إلى المحاكم الإقليمية.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item card bg-white rounded-2xl border border-blue-100 shadow-sm" data-open="false">
+            <h3>
+              <button type="button" class="accordion-trigger w-full flex items-center justify-between gap-4 p-5 text-start font-bold text-slate-900" aria-expanded="false">
+                <span>ماذا أفعل إذا انتُهكت حقوقي؟</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="accordion-chevron w-5 h-5 shrink-0 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+              </button>
+            </h3>
+            <div class="accordion-panel">
+              <div>
+                <p class="px-5 pb-5 leading-8 text-slate-600">
+                  الطريق يبدأ عادة داخل الدولة: اللجوء إلى القضاء الوطني أو
+                  المؤسسة الوطنية لحقوق الإنسان. وإذا استُنفدت سبل الإنصاف
+                  المحلية، قد يتاح تقديم بلاغ إلى هيئة تعاهدية أممية أو محكمة
+                  إقليمية بحسب التزامات الدولة. (هذا شرح تعليمي عام وليس استشارة
+                  قانونية.)
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= موارد خارجية ================= -->
+    <section id="resources" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">موارد خارجية موثوقة</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            مصادر رسمية بالعربية للتعمق أكثر — تُفتح في نافذة جديدة.
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <a href="https://www.ohchr.org/ar" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">المفوضية السامية لحقوق الإنسان</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">البوابة العربية الرسمية لجهود الأمم المتحدة في حقوق الإنسان: أخبار ووثائق وتقارير.</p>
+            <span class="text-xs text-slate-400" dir="ltr">ohchr.org/ar</span>
+          </a>
+
+          <a href="https://www.un.org/ar/about-us/universal-declaration-of-human-rights" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">النص الكامل للإعلان العالمي</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">النص العربي الرسمي للإعلان العالمي لحقوق الإنسان بمواده الثلاثين على موقع الأمم المتحدة.</p>
+            <span class="text-xs text-slate-400" dir="ltr">un.org/ar</span>
+          </a>
+
+          <a href="https://www.un.org/ar/global-issues/human-rights" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الأمم المتحدة — قضايا حقوق الإنسان</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">صفحة تعريفية شاملة بالعربية عن حقوق الإنسان ضمن القضايا العالمية للأمم المتحدة.</p>
+            <span class="text-xs text-slate-400" dir="ltr">un.org/ar</span>
+          </a>
+
+          <a href="https://www.ohchr.org/ar/hr-bodies/hrc/about-council" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">مجلس حقوق الإنسان</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">التعريف الرسمي بالمجلس وعضويته وأدواته، ومنها الاستعراض الدوري الشامل.</p>
+            <span class="text-xs text-slate-400" dir="ltr">ohchr.org/ar</span>
+          </a>
+
+          <a href="https://www.ohchr.org/ar/treaty-bodies" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الهيئات التعاهدية</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">قائمة لجان المعاهدات العشر وأعمالها وتقارير الدول والملاحظات الختامية.</p>
+            <span class="text-xs text-slate-400" dir="ltr">ohchr.org/ar</span>
+          </a>
+
+          <a href="https://www.icj-cij.org/" target="_blank" rel="noopener"
+             class="card group bg-white rounded-2xl p-6 shadow-sm border border-blue-100 block">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">محكمة العدل الدولية</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0 mt-1 text-blue-700" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+            </div>
+            <p class="text-sm leading-7 text-slate-600 mb-3">الموقع الرسمي للجهاز القضائي الرئيسي للأمم المتحدة: القضايا والأحكام والفتاوى.</p>
+            <span class="text-xs text-slate-400" dir="ltr">icj-cij.org</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="timeline.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الخط الزمني لحقوق الإنسان</span>
+        </span>
+      </a>
+
+      <a href="index.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">العودة إلى</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الرئيسية</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

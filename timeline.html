@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="خط زمني تفاعلي لتاريخ حقوق الإنسان: المعاهدات والمواثيق وأجهزة الأمم المتحدة مرتبة تاريخيًا من ميثاق الأمم المتحدة 1945 إلى اتفاقيات 2006." />
+  <title>الخط الزمني لحقوق الإنسان — المعاهدات والمواثيق والأجهزة</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Noto Kufi Arabic", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="index.html" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+          <li><a href="timeline.html" aria-current="page" class="px-3 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition duration-300">الخط الزمني</a></li>
+          <li><a href="faq.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">أسئلة شائعة</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="index.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+        <li><a href="timeline.html" aria-current="page" class="block px-4 py-3 rounded-xl font-medium text-blue-700 bg-blue-50 transition duration-300">الخط الزمني</a></li>
+        <li><a href="faq.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">أسئلة شائعة</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          رحلة عبر الزمن
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          الخط الزمني <span class="text-blue-700">لحقوق الإنسان</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          من ميثاق الأمم المتحدة سنة 1945 إلى معاهدات 2006، تتبّع كيف بُنيت
+          منظومة حقوق الإنسان لبنة لبنة: مواثيق وإعلانات ومعاهدات وأجهزة،
+          مرتبة حسب تاريخ صدورها أو تأسيسها. يمتلئ الخط الأزرق كلما تقدّمت
+          في القراءة.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= الخط الزمني ================= -->
+    <section id="history" class="py-20">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div id="timeline" class="timeline-wrap">
+          <div class="timeline-track" aria-hidden="true">
+            <div id="timeline-progress"></div>
+          </div>
+
+          <ol class="space-y-10">
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1945</span>
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">وثيقة تأسيسية + أجهزة</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">ميثاق الأمم المتحدة وتأسيس المنظمة</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  وُقّع في سان فرانسيسكو (26 يونيو) ودخل حيز النفاذ في 24 أكتوبر 1945.
+                  جعل تعزيز حقوق الإنسان أحد مقاصد المنظمة، وأنشأ أجهزتها الرئيسية
+                  الستة: الجمعية العامة، ومجلس الأمن، والمجلس الاقتصادي والاجتماعي،
+                  ومجلس الوصاية، ومحكمة العدل الدولية (باشرت عملها سنة 1946)،
+                  والأمانة العامة.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1946</span>
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">جهاز أممي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">لجنة حقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  أنشأها المجلس الاقتصادي والاجتماعي لتكون أول هيئة أممية متخصصة
+                  في حقوق الإنسان، وتولت صياغة الإعلان العالمي برئاسة إلينور
+                  روزفلت. ظلت تعمل ستين عامًا حتى حلّ محلها مجلس حقوق الإنسان
+                  سنة 2006.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1948</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold">إعلان</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">الإعلان العالمي لحقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  اعتمدته الجمعية العامة في باريس في 10 ديسمبر 1948. ثلاثون مادة
+                  وضعت المعيار المشترك لكل الشعوب والأمم، وألهمت ما تلاها من
+                  دساتير ومعاهدات، وتُرجم إلى أكثر من 500 لغة.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1950</span>
+                  <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold">ميثاق إقليمي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">الاتفاقية الأوروبية لحقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  أول اتفاقية إقليمية ملزمة (نفاذ 1953)، وأنشأت المحكمة الأوروبية
+                  لحقوق الإنسان التي يستطيع الأفراد اللجوء إليها مباشرة.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1965</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقية القضاء على جميع أشكال التمييز العنصري</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  أولى المعاهدات الأساسية التسع اعتمادًا (نفاذ 1969)، تلزم الدول
+                  بمنع كل تفرقة تقوم على العرق أو اللون أو الأصل.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1966</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">العهدان الدوليان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  العهد الدولي الخاص بالحقوق المدنية والسياسية، والعهد الدولي الخاص
+                  بالحقوق الاقتصادية والاجتماعية والثقافية (دخلا حيز النفاذ 1976).
+                  بهما اكتملت «الشرعة الدولية لحقوق الإنسان» إلى جانب الإعلان العالمي.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1969</span>
+                  <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold">ميثاق إقليمي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">الاتفاقية الأمريكية لحقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  تحمي حقوق سكان الأمريكتين عبر لجنة ومحكمة إقليميتين (نفاذ 1978).
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1979</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقية القضاء على جميع أشكال التمييز ضد المرأة</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  تكفل مساواة المرأة بالرجل في جميع الميادين (نفاذ 1981).
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1981</span>
+                  <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold">ميثاق إقليمي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">الميثاق الأفريقي لحقوق الإنسان والشعوب</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  يجمع بين حقوق الأفراد وحقوق الشعوب كالحق في التنمية (نفاذ 1986).
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1984</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقية مناهضة التعذيب</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  تحظر التعذيب في كل الظروف دون استثناء (نفاذ 1987).
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1989</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقية حقوق الطفل</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  أوسع معاهدة مصادقةً في التاريخ (نفاذ 1990)، تحمي حق الطفل في
+                  التعليم والصحة والهوية والحماية من الاستغلال.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1990</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقية حماية حقوق جميع العمال المهاجرين وأفراد أسرهم</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  تحمي المهاجرين للعمل وأسرهم في بلدان المنشأ والعبور والمقصد
+                  (نفاذ 2003).
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1993</span>
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">جهاز أممي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">المفوضية السامية لحقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  أنشأتها الجمعية العامة عقب مؤتمر فيينا العالمي لحقوق الإنسان،
+                  ومقرها جنيف؛ تقود جهود الأمم المتحدة في الرصد والدعم التقني
+                  وإسناد بقية الآليات.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">2004</span>
+                  <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold">ميثاق إقليمي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">الميثاق العربي لحقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  اعتمدته جامعة الدول العربية في قمة تونس، ودخل حيز النفاذ سنة 2008.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">2006</span>
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold">جهاز أممي</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">مجلس حقوق الإنسان</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  حلّ محل لجنة حقوق الإنسان كهيئة فرعية تابعة للجمعية العامة،
+                  ويتألف من 47 دولة ومقره جنيف. أطلق الاستعراض الدوري الشامل
+                  الذي تخضع له كل دول العالم.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline-event" data-reveal>
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <span class="px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">2006</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600/10 text-blue-800 text-xs font-bold">معاهدة دولية</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 mb-2">اتفاقيتا حقوق الأشخاص ذوي الإعاقة والاختفاء القسري</h2>
+                <p class="text-sm leading-7 text-slate-600">
+                  اعتُمدتا في السنة نفسها: اتفاقية حقوق الأشخاص ذوي الإعاقة
+                  (نفاذ 2008) والاتفاقية الدولية لحماية جميع الأشخاص من الاختفاء
+                  القسري (نفاذ 2010). بهما اكتملت المعاهدات الدولية الأساسية التسع.
+                </p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= خاتمة الصفحة ================= -->
+    <section id="conclusion" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">بناء لم يكتمل بعد</h2>
+        <p class="text-lg leading-9 text-slate-600 mb-10">
+          ستون عامًا فصلت بين ميثاق سان فرانسيسكو واكتمال المعاهدات التسع —
+          وما تزال المنظومة تتطور. تعرّف على هذه الوثائق وتصنيفها في صفحة المصادر.
+        </p>
+        <a href="sources.html"
+           class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-700 text-white font-bold shadow-lg shadow-blue-700/20 hover:bg-blue-800 transition duration-300">
+          اكتشف مصادر حقوق الإنسان
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+               stroke="currentColor" class="w-5 h-5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="mechanisms.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">آليات ضمان حقوق الإنسان</span>
+        </span>
+      </a>
+
+      <a href="faq.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">أسئلة شائعة وموارد</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
