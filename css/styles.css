@@ -4,8 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  /* حتى لا تختفي عناوين الأقسام خلف الشريط الثابت */
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 1.5rem;
 }
 
 /* حالات التركيز الواضحة للتنقل بلوحة المفاتيح */
