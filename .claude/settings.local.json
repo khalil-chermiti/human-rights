@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js\")"
+    ]
+  }
+}

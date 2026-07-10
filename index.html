@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="موقع تعليمي يشرح حقوق الإنسان ومبادئها الأساسية بلغة عربية مبسطة: الكرامة، المساواة، الحرية، العدالة، والإعلان العالمي لحقوق الإنسان." />
+  <title>حقوق الإنسان — تعرّف على حقوقك ومبادئها</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Tajawal", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="#hero" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="#hero" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="#hero" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 1. الواجهة الرئيسية ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-24">
+      <!-- زخارف خلفية ناعمة -->
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          محتوى تعليمي مبسّط
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+          حقوق <span class="text-blue-700">الإنسان</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600 mb-10">
+          حقوق الإنسان هي حقوق أساسية يولد بها كل شخص، لا تُمنح ولا تُنتزع،
+          وتضمن لكل فرد أن يعيش بكرامة وحرية وأمان، بغضّ النظر عن جنسه
+          أو لونه أو لغته أو دينه أو أصله.
+        </p>
+
+        <div data-hero>
+          <a href="#about"
+             class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-700 text-white font-bold shadow-lg shadow-blue-700/20 hover:bg-blue-800 transition duration-300">
+            ابدأ التعلّم
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                 stroke="currentColor" class="w-5 h-5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- رسم توضيحي: أشخاص متنوعون تحت ميزان العدالة -->
+        <div data-hero class="mt-14 flex justify-center" aria-hidden="true">
+          <svg viewBox="0 0 640 200" class="w-full max-w-2xl h-auto" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <ellipse cx="320" cy="182" rx="280" ry="12" fill="#dbeafe" />
+            <!-- الميزان -->
+            <g stroke="#2563eb" stroke-width="7" stroke-linecap="round" fill="none">
+              <line x1="320" y1="26" x2="320" y2="120" />
+              <line x1="250" y1="48" x2="390" y2="48" />
+              <path d="M222 60 a28 28 0 0 0 56 0" />
+              <path d="M362 60 a28 28 0 0 0 56 0" />
+              <line x1="250" y1="48" x2="238" y2="60" />
+              <line x1="250" y1="48" x2="262" y2="60" />
+              <line x1="390" y1="48" x2="378" y2="60" />
+              <line x1="390" y1="48" x2="402" y2="60" />
+            </g>
+            <circle cx="320" cy="20" r="8" fill="#2563eb" />
+            <!-- أشخاص -->
+            <g>
+              <circle cx="120" cy="128" r="17" fill="#93c5fd" />
+              <rect x="98" y="150" width="44" height="30" rx="15" fill="#93c5fd" />
+              <circle cx="200" cy="136" r="15" fill="#3b82f6" />
+              <rect x="181" y="156" width="38" height="26" rx="13" fill="#3b82f6" />
+              <circle cx="320" cy="146" r="14" fill="#1d4ed8" />
+              <rect x="302" y="164" width="36" height="20" rx="10" fill="#1d4ed8" />
+              <circle cx="440" cy="136" r="15" fill="#3b82f6" />
+              <rect x="421" y="156" width="38" height="26" rx="13" fill="#3b82f6" />
+              <circle cx="520" cy="128" r="17" fill="#93c5fd" />
+              <rect x="498" y="150" width="44" height="30" rx="15" fill="#93c5fd" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. ما هي حقوق الإنسان؟ ================= -->
+    <section id="about" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">ما هي حقوق الإنسان؟</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            هي مجموعة الحقوق والحريات الأساسية التي يستحقها كل إنسان لمجرد كونه إنسانًا.
+            فهي عالمية تشمل الجميع، ومتساوية لا تفاضل فيها، وغير قابلة للتجزئة
+            أو التنازل عنها.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <!-- التعريف -->
+          <article data-reveal class="card bg-blue-50/60 rounded-2xl p-8">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">تعريفها ببساطة</h3>
+            <p class="leading-8 text-slate-600">
+              حقوق يكتسبها الإنسان منذ ولادته، مثل الحق في الحياة والتعليم
+              وحرية التعبير. لا ترتبط بجنسية أو مكانة اجتماعية، ولا يجوز لأحد
+              أن يحرم شخصًا منها.
+            </p>
+          </article>
+
+          <!-- الأهمية -->
+          <article data-reveal class="card bg-blue-50/60 rounded-2xl p-8">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">لماذا تهمّنا جميعًا؟</h3>
+            <p class="leading-8 text-slate-600">
+              لأنها الأساس الذي يحفظ كرامة الأفراد ويحقق العدل والسلام في المجتمعات.
+              فحين تُحترم الحقوق يشعر الناس بالأمان، ويستطيع كل فرد أن يتعلّم
+              ويعمل ويعبّر عن رأيه دون خوف.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. مبادئ حقوق الإنسان ================= -->
+    <section id="principles" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">مبادئ حقوق الإنسان</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            تقوم حقوق الإنسان على مبادئ أساسية مترابطة، يكمّل بعضها بعضًا.
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الكرامة الإنسانية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              لكل إنسان قيمة أصيلة تستوجب الاحترام في جميع الظروف، فهي أساس كل الحقوق الأخرى.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.25h15m-15 7.5h15" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">المساواة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              يولد الناس جميعًا متساوين في الحقوق، فلا يتقدّم أحد على أحد بجنسه أو أصله أو ثروته.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحرية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              لكل فرد حرية الفكر والتعبير والتنقل والاختيار، ما دام لا يمسّ حقوق الآخرين.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">العدالة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              لكل شخص الحق في معاملة منصفة ومحاكمة عادلة أمام قضاء مستقل ونزيه.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">عدم التمييز</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              لا يجوز التفريق بين الناس بسبب العرق أو اللون أو الجنس أو اللغة أو الدين أو الرأي.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a6.026 6.026 0 0 0-.941 3.197m0 0A11.944 11.944 0 0 1 2.25 18.72a9.094 9.094 0 0 1 3.741-.479m0 0a3 3 0 0 1 4.682-2.72M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">المشاركة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              لكل فرد الحق في المساهمة في الحياة العامة والثقافية والقرارات التي تمسّ حياته.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">سيادة القانون</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              الجميع سواسية أمام القانون، ولا تُحمى الحقوق إلا بقواعد واضحة تُطبَّق على الكل.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">المساءلة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              من ينتهك الحقوق يتحمّل مسؤولية أفعاله، وللمتضرر الحق في الإنصاف والتعويض.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. الإعلان العالمي لحقوق الإنسان ================= -->
+    <section id="declaration" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-2 items-center">
+
+          <div data-reveal>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">
+              الإعلان العالمي لحقوق الإنسان
+            </h2>
+            <p class="text-lg leading-9 text-slate-600 mb-4">
+              وثيقة تاريخية اعتمدتها الجمعية العامة للأمم المتحدة في
+              <strong class="text-blue-700">10 ديسمبر 1948</strong>،
+              بعد الحرب العالمية الثانية، لتكون معيارًا مشتركًا تسعى إليه كل الشعوب والأمم.
+            </p>
+            <p class="text-lg leading-9 text-slate-600">
+              يتكوّن الإعلان من ديباجة و<strong>30 مادة</strong> تحدد الحقوق المدنية
+              والسياسية والاقتصادية والاجتماعية والثقافية لكل إنسان. ورغم أنه ليس
+              معاهدة ملزمة بذاته، فقد أصبح مرجعًا ألهم الدساتير والقوانين
+              والاتفاقيات الدولية حول العالم.
+            </p>
+          </div>
+
+          <div data-reveal class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            <div class="card bg-blue-50/60 rounded-2xl p-6 text-center lg:text-start lg:flex lg:items-center lg:gap-5">
+              <p class="text-3xl font-extrabold text-blue-700 mb-1 lg:mb-0">1948</p>
+              <p class="text-sm leading-6 text-slate-600">سنة اعتماد الإعلان من الجمعية العامة للأمم المتحدة في باريس.</p>
+            </div>
+            <div class="card bg-blue-50/60 rounded-2xl p-6 text-center lg:text-start lg:flex lg:items-center lg:gap-5">
+              <p class="text-3xl font-extrabold text-blue-700 mb-1 lg:mb-0">30</p>
+              <p class="text-sm leading-6 text-slate-600">مادة تغطي الحقوق والحريات الأساسية لكل إنسان دون استثناء.</p>
+            </div>
+            <div class="card bg-blue-50/60 rounded-2xl p-6 text-center lg:text-start lg:flex lg:items-center lg:gap-5">
+              <p class="text-3xl font-extrabold text-blue-700 mb-1 lg:mb-0">500+</p>
+              <p class="text-sm leading-6 text-slate-600">لغة تُرجم إليها الإعلان، ليكون من أكثر الوثائق ترجمة في العالم.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <figure data-reveal class="mt-12">
+          <img src="assets/images/eleanor-roosevelt-udhr.jpg"
+               alt="إلينور روزفلت تحمل ملصق الإعلان العالمي لحقوق الإنسان سنة 1949"
+               loading="lazy" width="1280" height="1005"
+               class="w-full max-w-2xl mx-auto h-auto object-cover rounded-2xl shadow-lg" />
+          <figcaption class="mt-3 text-sm text-slate-500 text-center">
+            إلينور روزفلت، رئيسة لجنة صياغة الإعلان، تحمل نسخة من الإعلان العالمي لحقوق الإنسان (1949) —
+            المصدر: مكتبة فرانكلين روزفلت الرئاسية عبر ويكيميديا كومنز (CC BY 2.0)
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 5. الخاتمة ================= -->
+    <section id="conclusion" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">الوعي مسؤوليتنا جميعًا</h2>
+        <p class="text-lg leading-9 text-slate-600">
+          معرفة حقوق الإنسان هي الخطوة الأولى نحو احترامها. فحين نعي حقوقنا
+          وحقوق الآخرين، نساهم في بناء مجتمع يسوده العدل والتسامح والكرامة.
+          الحقوق لا تكتمل إلا بالمسؤولية: أن نحترم الآخرين كما نحب أن يُحترم
+          حقّنا، وأن ننشر هذا الوعي في محيطنا.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="sources.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm sm:col-start-2">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">مصادر حقوق الإنسان</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

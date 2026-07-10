@@ -1,0 +1,36 @@
+/* ============================================================
+   حقوق الإنسان — أنماط مخصصة مكمّلة لـ Tailwind
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+  /* حتى لا تختفي عناوين الأقسام خلف الشريط الثابت */
+  scroll-padding-top: 5.5rem;
+}
+
+/* حالات التركيز الواضحة للتنقل بلوحة المفاتيح */
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+  border-radius: 0.375rem;
+}
+
+/* رفع خفيف لبطاقات المبادئ عند التحويم */
+.card {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgb(37 99 235 / 0.12),
+              0 8px 10px -6px rgb(37 99 235 / 0.12);
+}
+
+/* احترام تفضيل تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .card {
+    transition: none;
+  }
+}

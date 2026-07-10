@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تعرّف على تصنيفات حقوق الإنسان مع أمثلة لكل صنف: الحقوق المدنية والسياسية والاقتصادية والاجتماعية والثقافية، وأجيال الحقوق الثلاثة." />
+  <title>تصنيفات حقوق الإنسان — أمثلة لكل صنف</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Tajawal", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="index.html" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" aria-current="page" class="px-3 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="index.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" aria-current="page" class="block px-4 py-3 rounded-xl font-medium text-blue-700 bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          الحقوق حسب مضمونها
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          تصنيفات <span class="text-blue-700">حقوق الإنسان</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          تُصنَّف حقوق الإنسان عادة حسب مضمونها إلى خمس فئات كبرى: مدنية،
+          وسياسية، واقتصادية، واجتماعية، وثقافية. وهي فئات مترابطة لا يكتمل
+          بعضها دون بعض، فالحق في التعليم مثلًا يدعم حرية التعبير والمشاركة.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= الفئات الخمس ================= -->
+    <section id="categories" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">الفئات الخمس الكبرى</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            لكل فئة مجالها الخاص، ومع كل فئة أمثلة توضح ما تعنيه في الحياة اليومية.
+          </p>
+        </div>
+
+        <!-- رسم توضيحي: خمس دوائر مترابطة تمثل الفئات الخمس -->
+        <div data-reveal class="flex justify-center mb-14" aria-hidden="true">
+          <svg viewBox="0 0 560 170" class="w-full max-w-xl h-auto" xmlns="http://www.w3.org/2000/svg" role="presentation">
+            <ellipse cx="280" cy="152" rx="240" ry="10" fill="#dbeafe" />
+            <g opacity="0.9">
+              <circle cx="100" cy="80" r="52" fill="#bfdbfe" />
+              <circle cx="190" cy="80" r="52" fill="#93c5fd" />
+              <circle cx="280" cy="80" r="52" fill="#3b82f6" />
+              <circle cx="370" cy="80" r="52" fill="#93c5fd" />
+              <circle cx="460" cy="80" r="52" fill="#bfdbfe" />
+            </g>
+            <g fill="#ffffff" font-family="Tajawal, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+              <text x="100" y="86" fill="#1e3a8a">مدنية</text>
+              <text x="190" y="86" fill="#1e3a8a">سياسية</text>
+              <text x="280" y="86">اقتصادية</text>
+              <text x="370" y="86" fill="#1e3a8a">اجتماعية</text>
+              <text x="460" y="86" fill="#1e3a8a">ثقافية</text>
+            </g>
+          </svg>
+        </div>
+
+        <div data-stagger class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+          <!-- الحقوق المدنية -->
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحقوق المدنية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-4">
+              تحمي حياة الفرد وحريته وكرامته الشخصية في مواجهة أي اعتداء.
+            </p>
+            <p class="text-sm font-bold text-blue-700 mb-2">من أمثلتها:</p>
+            <ul class="space-y-2 text-sm leading-7 text-slate-600">
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الحق في الحياة والأمان الشخصي</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حرية التنقل واختيار مكان الإقامة</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>محاكمة عادلة وافتراض البراءة</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حرمة الحياة الخاصة والمراسلات</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حرية الفكر والوجدان والدين</span></li>
+            </ul>
+          </article>
+
+          <!-- الحقوق السياسية -->
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحقوق السياسية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-4">
+              تتيح للأفراد المشاركة في إدارة الشؤون العامة لمجتمعهم.
+            </p>
+            <p class="text-sm font-bold text-blue-700 mb-2">من أمثلتها:</p>
+            <ul class="space-y-2 text-sm leading-7 text-slate-600">
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>التصويت والترشح في انتخابات دورية نزيهة</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حرية الرأي والتعبير</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>التجمع السلمي وتكوين الجمعيات</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>تولّي الوظائف العامة بالمساواة</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>المشاركة في الشأن العام</span></li>
+            </ul>
+          </article>
+
+          <!-- الحقوق الاقتصادية -->
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحقوق الاقتصادية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-4">
+              تضمن للفرد ظروف عمل ومعيشة كريمة تمكّنه من إعالة نفسه وأسرته.
+            </p>
+            <p class="text-sm font-bold text-blue-700 mb-2">من أمثلتها:</p>
+            <ul class="space-y-2 text-sm leading-7 text-slate-600">
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الحق في العمل وفي شروط عمل عادلة</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>أجر منصف ومتساوٍ عن العمل المتساوي</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الراحة وتحديد ساعات العمل والإجازات</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>تكوين النقابات والانضمام إليها</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الحق في الملكية ومستوى معيشي لائق</span></li>
+            </ul>
+          </article>
+
+          <!-- الحقوق الاجتماعية -->
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحقوق الاجتماعية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-4">
+              تكفل الحماية الاجتماعية والخدمات الأساسية للعيش بكرامة.
+            </p>
+            <p class="text-sm font-bold text-blue-700 mb-2">من أمثلتها:</p>
+            <ul class="space-y-2 text-sm leading-7 text-slate-600">
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الحق في التعليم</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الرعاية الصحية</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>السكن الملائم والغذاء الكافي</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>الضمان الاجتماعي</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حماية الأسرة والأمومة والطفولة</span></li>
+            </ul>
+          </article>
+
+          <!-- الحقوق الثقافية -->
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الحقوق الثقافية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-4">
+              تتيح المشاركة في الحياة الثقافية والاستفادة من العلم والفنون.
+            </p>
+            <p class="text-sm font-bold text-blue-700 mb-2">من أمثلتها:</p>
+            <ul class="space-y-2 text-sm leading-7 text-slate-600">
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>المشاركة في الحياة الثقافية للمجتمع</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>التمتع بفوائد التقدم العلمي</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>حماية إنتاج المؤلف العلمي والأدبي والفني</span></li>
+              <li class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mt-1.5 shrink-0 text-blue-600" aria-hidden="true"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/></svg><span>استخدام اللغة الأم والتعبير الثقافي</span></li>
+            </ul>
+          </article>
+
+          <!-- بطاقة الترابط -->
+          <article class="card bg-blue-700 text-white rounded-2xl p-6">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/15 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">فئات مترابطة لا تتجزأ</h3>
+            <p class="text-sm leading-7 text-blue-100">
+              هذا التقسيم لتسهيل الفهم فقط؛ فالحقوق كلٌّ واحد: من دون تعليم
+              (اجتماعي) تضعف حرية التعبير (سياسي)، ومن دون عمل (اقتصادي)
+              تتأثر الكرامة والحياة الخاصة (مدني). لذلك تؤكد المواثيق الدولية
+              أن الحقوق «عالمية ومترابطة وغير قابلة للتجزئة».
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= أجيال الحقوق ================= -->
+    <section id="generations" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">تصنيف آخر: أجيال الحقوق الثلاثة</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            يصنّف الباحثون الحقوق أيضًا حسب تطورها التاريخي إلى ثلاثة «أجيال» متعاقبة.
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 md:grid-cols-3">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الجيل الأول</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">حقوق الحرية</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-3">
+              الحقوق المدنية والسياسية، وارتبطت تاريخيًا بمواجهة الاستبداد.
+            </p>
+            <p class="text-sm leading-7 text-slate-500">
+              أمثلة: حرية التعبير، المحاكمة العادلة، حق التصويت.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الجيل الثاني</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">حقوق المساواة</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-3">
+              الحقوق الاقتصادية والاجتماعية والثقافية، وبرزت مع قضايا العدالة الاجتماعية.
+            </p>
+            <p class="text-sm leading-7 text-slate-500">
+              أمثلة: التعليم، الرعاية الصحية، العمل بأجر منصف.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الجيل الثالث</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">حقوق التضامن</h3>
+            <p class="text-sm leading-7 text-slate-600 mb-3">
+              حقوق جماعية لا تتحقق إلا بتعاون الشعوب والدول معًا.
+            </p>
+            <p class="text-sm leading-7 text-slate-500">
+              أمثلة: الحق في التنمية، بيئة سليمة، السلام.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= خاتمة الصفحة ================= -->
+    <section id="conclusion" class="py-20">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">من أين تستمد هذه الحقوق؟</h2>
+        <p class="text-lg leading-9 text-slate-600">
+          كل فئة من هذه الفئات تستند إلى وثائق ومواثيق دولية وإقليمية ووطنية
+          تحدد مضمونها وتكفل حمايتها.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="sources.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">مصادر حقوق الإنسان</span>
+        </span>
+      </a>
+
+      <a href="guarantees.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">ضمانات حقوق الإنسان</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تعرّف على آليات ضمان حقوق الإنسان وكيف تعمل الأمم المتحدة وأجهزتها على حمايتها: مجلس حقوق الإنسان والاستعراض الدوري الشامل والمفوضية السامية والهيئات التعاهدية." />
+  <title>آليات ضمان حقوق الإنسان — دور الأمم المتحدة وأجهزتها</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Tajawal", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="index.html" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" aria-current="page" class="px-3 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition duration-300">الآليات</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="index.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" aria-current="page" class="block px-4 py-3 rounded-xl font-medium text-blue-700 bg-blue-50 transition duration-300">الآليات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          الحماية في التطبيق
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          آليات ضمان <span class="text-blue-700">حقوق الإنسان</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          إذا كانت الضمانات هي المبادئ التي تحمي الحقوق، فإن الآليات هي
+          الهيئات والإجراءات العملية التي تسهر على تطبيقها: ترصد الأوضاع،
+          وتتلقى الشكاوى، وتحاسب على الانتهاكات. وتقف الأمم المتحدة
+          وأجهزتها في قلب هذه المنظومة.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= 1. أجهزة الأمم المتحدة الرئيسية ================= -->
+    <section id="un-organs" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">أجهزة الأمم المتحدة الرئيسية</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            نصّ ميثاق الأمم المتحدة (1945) على تعزيز احترام حقوق الإنسان
+            كأحد مقاصد المنظمة. وللمنظمة <strong class="text-blue-700">ستة أجهزة رئيسية</strong>
+            حددها الميثاق، ولكل منها دور في ذلك:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a6.026 6.026 0 0 0-.941 3.197m0 0A11.944 11.944 0 0 1 2.25 18.72a9.094 9.094 0 0 1 3.741-.479m0 0a3 3 0 0 1 4.682-2.72M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الجمعية العامة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              تضم كل الدول الأعضاء؛ وهي التي اعتمدت الإعلان العالمي سنة 1948
+              وما تلاه من اتفاقيات، وتناقش أوضاع حقوق الإنسان وتصدر قرارات
+              وتوصيات بشأنها.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">مجلس الأمن</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              مسؤول عن حفظ السلم والأمن الدوليين؛ يتدخل عند الانتهاكات
+              الجسيمة، وقراراته ملزمة، وقد ينشئ لجان تحقيق أو يفرض تدابير
+              على المنتهكين.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">محكمة العدل الدولية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              الجهاز القضائي الرئيسي للأمم المتحدة؛ تفصل في النزاعات بين
+              الدول، ومنها ما يتصل بتفسير اتفاقيات حقوق الإنسان وتطبيقها.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">المجلس الاقتصادي والاجتماعي</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              ينسّق عمل الأمم المتحدة الاقتصادي والاجتماعي، وتتبعه لجان
+              متخصصة ذات صلة وثيقة بالحقوق، مثل لجنة وضع المرأة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الأمانة العامة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              يقودها الأمين العام؛ تنفّذ ما تقرره الأجهزة الأخرى، ويلفت
+              الأمين العام نظر العالم إلى الأزمات والانتهاكات الجسيمة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-100 text-blue-700 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">مجلس الوصاية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              أشرف تاريخيًا على الأقاليم المشمولة بالوصاية حتى نالت
+              استقلالها، وقد علّق أعماله منذ سنة 1994 بعد إنجاز مهمته.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- المفوضية السامية -->
+        <div data-reveal class="mt-6 card bg-blue-700 text-white rounded-2xl p-8">
+          <h3 class="text-xl font-bold mb-3">المفوضية السامية لحقوق الإنسان</h3>
+          <p class="leading-8 text-blue-100">
+            إلى جانب الأجهزة الستة، أنشأت الجمعية العامة سنة
+            <strong class="text-white">1993</strong> المفوضية السامية لحقوق الإنسان
+            (مقرها جنيف، وتتبع الأمانة العامة) لتقود جهود المنظمة في هذا المجال:
+            ترصد الأوضاع حول العالم، وتقدم الدعم التقني للدول، وتُسند عمل
+            بقية الآليات.
+          </p>
+        </div>
+
+        <figure data-reveal class="mt-12">
+          <img src="assets/images/icj-peace-palace.jpg" alt="قصر السلام في لاهاي، مقر محكمة العدل الدولية"
+               loading="lazy" width="1280" height="955"
+               class="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg" />
+          <figcaption class="mt-3 text-sm text-slate-500 text-center">
+            قصر السلام في لاهاي (هولندا)، مقر محكمة العدل الدولية —
+            المصدر: ويكيميديا كومنز، محكمة العدل الدولية (ملكية عامة)
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 2. مجلس حقوق الإنسان ================= -->
+    <section id="hrc" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">مجلس حقوق الإنسان</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            الهيئة الأممية الرئيسية المتخصصة في حقوق الإنسان، وهو هيئة فرعية
+            تابعة للجمعية العامة، أُنشئ سنة 2006 ومقره جنيف، ويتألف من 47
+            دولة تنتخبها الجمعية العامة. يعمل بثلاث أدوات رئيسية:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 md:grid-cols-3">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الأداة الأولى</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الاستعراض الدوري الشامل</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              تخضع كل دولة عضو في الأمم المتحدة — دون استثناء — لمراجعة
+              سجلها في حقوق الإنسان أمام بقية الدول مرة كل نحو أربع سنوات
+              ونصف، وتتلقى توصيات تلتزم بمتابعتها.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الأداة الثانية</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الإجراءات الخاصة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              خبراء مستقلون (مقررون خاصون وأفرقة عمل) يكلَّفون بموضوع محدد
+              كالتعليم أو التعذيب، أو ببلد محدد؛ يجرون زيارات ميدانية
+              ويرفعون تقارير علنية.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">الأداة الثالثة</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">إجراء الشكاوى</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              يتيح للأفراد والمنظمات لفت نظر المجلس إلى الأنماط الثابتة
+              من الانتهاكات الجسيمة المؤيدة بأدلة موثوقة، لينظر فيها بسرية.
+            </p>
+          </article>
+
+        </div>
+
+        <figure data-reveal class="mt-12">
+          <img src="assets/images/hrc-room-geneva.jpg" alt="قاعة حقوق الإنسان وتحالف الحضارات في قصر الأمم بجنيف، حيث يجتمع مجلس حقوق الإنسان"
+               loading="lazy" width="1280" height="853"
+               class="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg" />
+          <figcaption class="mt-3 text-sm text-slate-500 text-center">
+            قاعة حقوق الإنسان وتحالف الحضارات في قصر الأمم بجنيف، مقر اجتماعات مجلس حقوق الإنسان —
+            المصدر: ويكيميديا كومنز، © Ludovic Courtès (CC BY-SA 3.0)
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 3. الهيئات التعاهدية ================= -->
+    <section id="treaty-bodies" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">3</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">الهيئات التعاهدية (لجان المعاهدات)</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            لكل معاهدة رئيسية لجنة من خبراء مستقلين تراقب تنفيذ الدول
+            لالتزاماتها. وعددها <strong class="text-blue-700">عشر هيئات</strong>،
+            وهذه قائمتها كاملة:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-6">
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">اللجنة المعنية بحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ العهد الدولي الخاص بالحقوق المدنية والسياسية.</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة الحقوق الاقتصادية والاجتماعية والثقافية</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ العهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية.</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة القضاء على التمييز العنصري</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية القضاء على جميع أشكال التمييز العنصري (1965).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة القضاء على التمييز ضد المرأة</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية القضاء على جميع أشكال التمييز ضد المرأة (1979).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة مناهضة التعذيب</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية مناهضة التعذيب (1984).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">اللجنة الفرعية لمنع التعذيب</h3>
+            <p class="text-sm leading-7 text-slate-600">تزور أماكن الاحتجاز وقائيًا بموجب البروتوكول الاختياري لاتفاقية مناهضة التعذيب.</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة حقوق الطفل</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية حقوق الطفل (1989).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة العمال المهاجرين</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية حماية حقوق جميع العمال المهاجرين وأفراد أسرهم (1990).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">لجنة حقوق الأشخاص ذوي الإعاقة</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية حقوق الأشخاص ذوي الإعاقة (2006).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <h3 class="font-bold text-slate-900 mb-2">اللجنة المعنية بحالات الاختفاء القسري</h3>
+            <p class="text-sm leading-7 text-slate-600">تراقب تنفيذ اتفاقية حماية جميع الأشخاص من الاختفاء القسري (2006).</p>
+          </article>
+
+        </div>
+
+        <div data-reveal class="card bg-blue-700 text-white rounded-2xl p-8">
+          <h3 class="text-xl font-bold mb-3">كيف تعمل هذه اللجان؟</h3>
+          <p class="leading-8 text-blue-100">
+            تقدّم الدول إليها <strong class="text-white">تقارير دورية</strong> عمّا أنجزته،
+            فتناقشها اللجنة وتصدر <strong class="text-white">ملاحظات ختامية</strong> بمواطن
+            القوة والقصور وتوصيات للتحسين. كما يمكن لبعضها تلقّي
+            <strong class="text-white">بلاغات من الأفراد</strong> الذين يرون أن دولتهم انتهكت
+            حقوقهم، متى قبلت الدولة ذلك واستنفد المشتكي سبل الإنصاف المحلية.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. كيف تعمل المنظومة عمليًا؟ ================= -->
+    <section id="how-it-works" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">كيف تعمل المنظومة عمليًا؟</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            على اختلاف هذه الآليات، تشترك في دورة عمل واحدة تقريبًا:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center">
+            <p class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-700 text-white text-xl font-extrabold mb-4">1</p>
+            <h3 class="font-bold text-slate-900 mb-2">الرصد وجمع المعلومات</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              من تقارير الدول والزيارات الميدانية وشكاوى الأفراد ومنظمات
+              المجتمع المدني.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center">
+            <p class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-700 text-white text-xl font-extrabold mb-4">2</p>
+            <h3 class="font-bold text-slate-900 mb-2">الحوار والمساءلة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              مناقشة الدولة المعنية علنًا، وإصدار توصيات وملاحظات محددة
+              قابلة للمتابعة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center">
+            <p class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-700 text-white text-xl font-extrabold mb-4">3</p>
+            <h3 class="font-bold text-slate-900 mb-2">المتابعة والدعم</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              متابعة تنفيذ التوصيات في الدورات اللاحقة، وتقديم مساعدة تقنية
+              للدول لتطوير قوانينها ومؤسساتها.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100 text-center">
+            <p class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-700 text-white text-xl font-extrabold mb-4">4</p>
+            <h3 class="font-bold text-slate-900 mb-2">العلنية والتوثيق</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              نشر التقارير والنتائج ليطّلع عليها العالم؛ فالرأي العام الدولي
+              نفسه وسيلة ضغط لحماية الحقوق.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= خاتمة الصفحة ================= -->
+    <section id="conclusion" class="py-20">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">آليات تكمّل الضمانات</h2>
+        <p class="text-lg leading-9 text-slate-600">
+          هذه الآليات لا تحل محل الضمانات الوطنية، بل تسندها: فحين يعجز
+          القضاء الوطني أو تقصّر الدولة، يبقى للمجتمع الدولي عين ترصد
+          وصوت يحاسب.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="guarantees.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">ضمانات حقوق الإنسان</span>
+        </span>
+      </a>
+
+      <a href="index.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">العودة إلى</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الرئيسية</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

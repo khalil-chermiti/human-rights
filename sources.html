@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="تعرّف على مصادر حقوق الإنسان حسب تصنيفها: المصادر الدولية كالإعلان العالمي والعهدين الدوليين، والمصادر الإقليمية كالميثاق العربي، والمصادر الوطنية كالدساتير والتشريعات." />
+  <title>مصادر حقوق الإنسان — تصنيف حسب النطاق</title>
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Tajawal", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="التنقل الرئيسي">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- الشعار -->
+        <a href="index.html" class="flex items-center gap-2 text-blue-700 font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-8 h-8" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+          </svg>
+          <span>حقوق الإنسان</span>
+        </a>
+
+        <!-- روابط سطح المكتب -->
+        <ul class="hidden lg:flex items-center gap-1">
+          <li><a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+          <li><a href="sources.html" aria-current="page" class="px-3 py-2 rounded-lg text-sm font-medium text-blue-700 bg-blue-50 transition duration-300">المصادر</a></li>
+          <li><a href="categories.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+          <li><a href="guarantees.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+          <li><a href="mechanisms.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+        </ul>
+
+        <!-- زر القائمة للجوّال -->
+        <button id="menu-button" type="button"
+                class="lg:hidden p-2.5 rounded-xl text-slate-600 hover:bg-blue-50 transition duration-300"
+                aria-label="القائمة" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+               stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- قائمة الجوّال -->
+      <ul id="mobile-menu" class="hidden lg:hidden pb-4 space-y-1">
+        <li><a href="index.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الرئيسية</a></li>
+        <li><a href="sources.html" aria-current="page" class="block px-4 py-3 rounded-xl font-medium text-blue-700 bg-blue-50 transition duration-300">المصادر</a></li>
+        <li><a href="categories.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">التصنيفات</a></li>
+        <li><a href="guarantees.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الضمانات</a></li>
+        <li><a href="mechanisms.html" class="block px-4 py-3 rounded-xl font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50 transition duration-300">الآليات</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          تصنيف حسب النطاق
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          مصادر <span class="text-blue-700">حقوق الإنسان</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          لا تقوم حقوق الإنسان على وثيقة واحدة، بل تستمد من منظومة متكاملة من
+          المصادر تتدرّج حسب نطاقها: مواثيق دولية تشمل العالم كله، واتفاقيات
+          إقليمية تخص قارات ومناطق بعينها، ومصادر وطنية تحميها داخل كل دولة.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= 1. المصادر الدولية ================= -->
+    <section id="international" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">المصادر الدولية</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            وثائق اعتمدتها الأمم المتحدة لتنطبق على جميع دول العالم وشعوبه.
+            وتُعرف الوثائق الثلاث الأولى معًا باسم
+            <strong class="text-blue-700">«الشرعة الدولية لحقوق الإنسان»</strong>.
+          </p>
+        </div>
+
+        <figure data-reveal class="mb-12">
+          <img src="assets/images/un-general-assembly.jpg" alt="قاعة الجمعية العامة للأمم المتحدة في نيويورك"
+               loading="lazy" width="1280" height="794"
+               class="w-full h-64 sm:h-80 object-cover rounded-2xl shadow-lg" />
+          <figcaption class="mt-3 text-sm text-slate-500 text-center">
+            قاعة الجمعية العامة للأمم المتحدة، حيث اعتُمد الإعلان العالمي والمعاهدات الدولية —
+            المصدر: ويكيميديا كومنز، © Patrick Gruban (CC BY-SA 2.0)
+          </figcaption>
+        </figure>
+
+        <!-- الشرعة الدولية -->
+        <div data-stagger class="grid gap-6 md:grid-cols-3 mb-6">
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1948</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الإعلان العالمي لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              الوثيقة المؤسِّسة التي حددت في 30 مادة الحقوق والحريات الأساسية
+              لكل إنسان، وألهمت معظم المواثيق اللاحقة.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1966</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">العهد الدولي الخاص بالحقوق المدنية والسياسية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              معاهدة ملزمة للدول المصادقة عليها (دخلت حيز النفاذ 1976)، تحمي
+              حقوقًا مثل الحياة والمحاكمة العادلة وحرية التعبير والمشاركة العامة.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-4 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">1966</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">العهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              معاهدة ملزمة (دخلت حيز النفاذ 1976) تكفل حقوقًا مثل العمل والتعليم
+              والصحة والضمان الاجتماعي والمشاركة في الحياة الثقافية.
+            </p>
+          </article>
+        </div>
+
+        <!-- الاتفاقيات المتخصصة -->
+        <div data-reveal class="mt-12 mb-6">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">الاتفاقيات المتخصصة السبع</h3>
+          <p class="leading-8 text-slate-600">
+            تشكّل هذه الاتفاقيات السبع، مع العهدين الدوليين، ما يُعرف باسم
+            <strong class="text-blue-700">«المعاهدات الدولية الأساسية التسع الملزمة»</strong>
+            لحقوق الإنسان، وهذه قائمتها كاملة:
+          </p>
+        </div>
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1965</span>
+            <h4 class="font-bold text-slate-900 mb-2">الاتفاقية الدولية للقضاء على جميع أشكال التمييز العنصري</h4>
+            <p class="text-sm leading-7 text-slate-600">تلزم الدول بمنع كل تفرقة تقوم على العرق أو اللون أو الأصل (نفاذ 1969).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1979</span>
+            <h4 class="font-bold text-slate-900 mb-2">اتفاقية القضاء على جميع أشكال التمييز ضد المرأة</h4>
+            <p class="text-sm leading-7 text-slate-600">تكفل مساواة المرأة بالرجل في الحقوق المدنية والسياسية والاقتصادية (نفاذ 1981).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1984</span>
+            <h4 class="font-bold text-slate-900 mb-2">اتفاقية مناهضة التعذيب</h4>
+            <p class="text-sm leading-7 text-slate-600">تحظر التعذيب وضروب المعاملة القاسية أو المهينة في كل الظروف (نفاذ 1987).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1989</span>
+            <h4 class="font-bold text-slate-900 mb-2">اتفاقية حقوق الطفل</h4>
+            <p class="text-sm leading-7 text-slate-600">أوسع اتفاقية مصادقةً في العالم، تحمي حق الطفل في التعليم والصحة والحماية (نفاذ 1990).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1990</span>
+            <h4 class="font-bold text-slate-900 mb-2">الاتفاقية الدولية لحماية حقوق جميع العمال المهاجرين وأفراد أسرهم</h4>
+            <p class="text-sm leading-7 text-slate-600">تحمي حقوق المهاجرين للعمل وأسرهم في بلدان المنشأ والعبور والمقصد (نفاذ 2003).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2006</span>
+            <h4 class="font-bold text-slate-900 mb-2">الاتفاقية الدولية لحماية جميع الأشخاص من الاختفاء القسري</h4>
+            <p class="text-sm leading-7 text-slate-600">تحظر الاختفاء القسري وتكرّس حق ذوي الضحايا في معرفة الحقيقة (نفاذ 2010).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2006</span>
+            <h4 class="font-bold text-slate-900 mb-2">اتفاقية حقوق الأشخاص ذوي الإعاقة</h4>
+            <p class="text-sm leading-7 text-slate-600">تضمن المشاركة الكاملة لذوي الإعاقة في المجتمع على قدم المساواة (نفاذ 2008).</p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6 sm:col-span-2 lg:col-span-2">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">مصدر مكمّل</span>
+            <h4 class="font-bold text-slate-900 mb-2">العرف الدولي والمبادئ العامة للقانون</h4>
+            <p class="text-sm leading-7 text-slate-600">
+              إلى جانب المعاهدات التسع، توجد قواعد استقرت عليها ممارسة الدول —
+              مثل حظر الرق والإبادة الجماعية — تُلزم جميع الدول ولو لم تصادق على معاهدة.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. المصادر الإقليمية ================= -->
+    <section id="regional" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">المصادر الإقليمية</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            اتفاقيات أبرمتها مجموعات من الدول في قارة أو منطقة واحدة، لتراعي
+            خصوصياتها وتنشئ آليات حماية أقرب إلى شعوبها.
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1950</span>
+            <h3 class="font-bold text-slate-900 mb-2">الاتفاقية الأوروبية لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">أنشأت المحكمة الأوروبية لحقوق الإنسان التي يلجأ إليها الأفراد مباشرة (نفاذ 1953).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1969</span>
+            <h3 class="font-bold text-slate-900 mb-2">الاتفاقية الأمريكية لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">تحمي حقوق سكان الأمريكتين عبر لجنة ومحكمة إقليميتين (نفاذ 1978).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1981</span>
+            <h3 class="font-bold text-slate-900 mb-2">الميثاق الأفريقي لحقوق الإنسان والشعوب</h3>
+            <p class="text-sm leading-7 text-slate-600">يجمع بين حقوق الأفراد وحقوق الشعوب، كالحق في التنمية (نفاذ 1986).</p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2004</span>
+            <h3 class="font-bold text-slate-900 mb-2">الميثاق العربي لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">اعتمدته جامعة الدول العربية، ودخل حيز النفاذ سنة 2008.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. المصادر الوطنية ================= -->
+    <section id="national" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">3</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">المصادر الوطنية</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            داخل كل دولة، تتحوّل الالتزامات الدولية إلى حماية فعلية عبر
+            قواعد ومؤسسات وطنية يلمسها المواطن في حياته اليومية.
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">الدساتير</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              أعلى وثيقة قانونية في الدولة، وتتضمن عادة بابًا كاملًا للحقوق
+              والحريات العامة.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">التشريعات والقوانين</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              قوانين تفصّل الحقوق وتنظّم ممارستها، كقوانين العمل والتعليم
+              وحماية الطفل.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 3v17m0 0h4m-4 0H8m-3.5-5 3-7 3 7a4.2 4.2 0 0 1-6 0Zm9 0 3-7 3 7a4.2 4.2 0 0 1-6 0Z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">أحكام القضاء الوطني</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              المحاكم تفسّر النصوص وتنصف المتضررين، فتتحول الحقوق من نصوص
+              إلى واقع.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-blue-700 text-white mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                   stroke="currentColor" class="w-6 h-6" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">المؤسسات الوطنية لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              هيئات مستقلة تتلقى الشكاوى وترصد الأوضاع وتنشر ثقافة الحقوق.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= خاتمة الصفحة ================= -->
+    <section id="conclusion" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">منظومة واحدة متكاملة</h2>
+        <p class="text-lg leading-9 text-slate-600">
+          هذه المصادر لا تعمل منفصلة، بل يكمّل بعضها بعضًا: تضع المواثيق
+          الدولية المعايير، وتقرّبها الاتفاقيات الإقليمية من واقع المنطقة،
+          وتحوّلها الدساتير والقوانين الوطنية إلى حماية يومية ملموسة.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="index.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الرئيسية</span>
+        </span>
+      </a>
+
+      <a href="categories.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">تصنيفات حقوق الإنسان</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
