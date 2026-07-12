@@ -63,6 +63,20 @@
     <section id="history" class="py-20">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        <!-- أزرار التصفية حسب النوع -->
+        <div id="timeline-filters" class="flex flex-wrap justify-center gap-2 mb-12" role="group" aria-label="تصفية الأحداث حسب النوع">
+          <button type="button" data-filter="all" aria-pressed="true"
+                  class="px-4 py-2 rounded-full text-sm font-bold border transition duration-300 bg-blue-700 text-white border-blue-700">الكل</button>
+          <button type="button" data-filter="organ" aria-pressed="false"
+                  class="px-4 py-2 rounded-full text-sm font-bold border transition duration-300 bg-white text-slate-700 border-blue-200 hover:bg-blue-50">الأجهزة الأممية</button>
+          <button type="button" data-filter="treaty" aria-pressed="false"
+                  class="px-4 py-2 rounded-full text-sm font-bold border transition duration-300 bg-white text-slate-700 border-blue-200 hover:bg-blue-50">المعاهدات الدولية</button>
+          <button type="button" data-filter="regional" aria-pressed="false"
+                  class="px-4 py-2 rounded-full text-sm font-bold border transition duration-300 bg-white text-slate-700 border-blue-200 hover:bg-blue-50">المواثيق الإقليمية</button>
+          <button type="button" data-filter="declaration" aria-pressed="false"
+                  class="px-4 py-2 rounded-full text-sm font-bold border transition duration-300 bg-white text-slate-700 border-blue-200 hover:bg-blue-50">الإعلانات</button>
+        </div>
+
         <div id="timeline" class="timeline-wrap">
           <div class="timeline-track" aria-hidden="true">
             <div id="timeline-progress"></div>
@@ -70,7 +84,7 @@
 
           <ol class="space-y-10">
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="organ">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -88,7 +102,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="organ">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -105,7 +119,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="declaration">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -121,7 +135,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="regional">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -136,7 +150,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -151,7 +165,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -167,7 +181,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="regional">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -181,7 +195,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -195,7 +209,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="regional">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -209,7 +223,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -223,7 +237,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -238,7 +252,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -253,7 +267,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="organ">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -269,7 +283,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="regional">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -283,7 +297,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="organ">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -299,7 +313,7 @@
               </div>
             </li>
 
-            <li class="timeline-event" data-reveal>
+            <li class="timeline-event" data-reveal data-type="treaty">
               <span class="timeline-dot" aria-hidden="true"></span>
               <div class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -323,12 +337,11 @@
     <!-- ================= خاتمة الصفحة ================= -->
     <section id="conclusion" class="py-20 bg-gradient-to-b from-blue-50 to-white">
       <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">بقيت لديك أسئلة؟</h2>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">بناء لم يكتمل بعد</h2>
         <p class="text-lg leading-9 text-slate-600">
           ستون عامًا فصلت بين ميثاق سان فرانسيسكو واكتمال المعاهدات التسع —
-          وما تزال المنظومة تتطور. في الصفحة التالية تجد إجابات مبسطة عن
-          الأسئلة الأكثر تكرارًا حول حقوق الإنسان، وروابط إلى مصادر رسمية
-          موثوقة للتعمق أكثر.
+          وما تزال المنظومة تتطور. الوعي بهذا التاريخ هو الخطوة الأولى نحو
+          صون هذه الحقوق ونشر ثقافتها.
         </p>
       </div>
     </section>
@@ -339,21 +352,21 @@
   <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
 
-      <a href="mechanisms.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+      <a href="un-structure.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
              stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
         <span>
           <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
-          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">آليات ضمان حقوق الإنسان</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">هيكل الأمم المتحدة</span>
         </span>
       </a>
 
-      <a href="faq.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+      <a href="index.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
         <span class="text-end">
-          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
-          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">أسئلة شائعة وموارد</span>
+          <span class="block text-sm text-slate-500 mb-1">العودة إلى</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الرئيسية</span>
         </span>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
              stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">

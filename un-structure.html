@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="هيكل الأمم المتحدة: الأجهزة الرئيسية الستة والهيئات الفرعية والوكالات المتخصصة، مع سنة إنشاء كل جهاز ووظيفته." />
+  <title>هيكل الأمم المتحدة — الأجهزة والهيئات والوكالات</title>
+
+  <!-- أيقونة الموقع -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- الخط العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Noto Kufi Arabic", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+
+  <main id="main">
+
+    <!-- ================= واجهة الصفحة ================= -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white pt-32 pb-16">
+      <div class="absolute -top-24 -start-24 w-96 h-96 rounded-full bg-blue-100/60 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-32 -end-24 w-96 h-96 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span data-hero class="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
+          من الميثاق إلى المؤسسات
+        </span>
+
+        <h1 data-hero class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+          هيكل <span class="text-blue-700">الأمم المتحدة</span>
+        </h1>
+
+        <p data-hero class="max-w-2xl mx-auto text-lg sm:text-xl leading-9 text-slate-600">
+          تأسست الأمم المتحدة سنة 1945 بمصادقة 51 دولة على ميثاقها، وتضم اليوم
+          193 دولة عضوًا. تعرّف على بنيتها: الأجهزة الرئيسية الستة، ثم الهيئات
+          الفرعية والوكالات المتخصصة — مع سنة إنشاء كل منها ووظيفته.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= المخطط التنظيمي ================= -->
+    <section id="org-chart" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <figure data-reveal aria-label="مخطط مبسط: ميثاق الأمم المتحدة أنشأ ستة أجهزة رئيسية">
+          <svg viewBox="0 0 920 250" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg" role="img">
+            <!-- الصندوق الأعلى: الميثاق -->
+            <rect x="360" y="10" width="200" height="56" rx="14" fill="#1d4ed8" />
+            <text x="460" y="34" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700" font-family="Noto Kufi Arabic, sans-serif">ميثاق الأمم المتحدة</text>
+            <text x="460" y="55" text-anchor="middle" fill="#bfdbfe" font-size="13" font-family="Noto Kufi Arabic, sans-serif">سان فرانسيسكو — 1945</text>
+
+            <!-- خطوط الربط -->
+            <g stroke="#93c5fd" stroke-width="2.5" fill="none">
+              <line x1="460" y1="66" x2="460" y2="100" />
+              <line x1="75" y1="130" x2="845" y2="130" transform="translate(0,-30)" />
+              <line x1="75" y1="100" x2="75" y2="150" />
+              <line x1="229" y1="100" x2="229" y2="150" />
+              <line x1="383" y1="100" x2="383" y2="150" />
+              <line x1="537" y1="100" x2="537" y2="150" />
+              <line x1="691" y1="100" x2="691" y2="150" />
+              <line x1="845" y1="100" x2="845" y2="150" />
+            </g>
+
+            <!-- الأجهزة الستة -->
+            <g font-family="Noto Kufi Arabic, sans-serif">
+              <rect x="5" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="75" y="182" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="700">الجمعية العامة</text>
+              <text x="75" y="204" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+
+              <rect x="159" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="229" y="182" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="700">مجلس الأمن</text>
+              <text x="229" y="204" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+
+              <rect x="313" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="383" y="175" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="700">المجلس الاقتصادي</text>
+              <text x="383" y="193" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="700">والاجتماعي</text>
+              <text x="383" y="212" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+
+              <rect x="467" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="537" y="182" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="700">مجلس الوصاية</text>
+              <text x="537" y="204" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+
+              <rect x="621" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="691" y="175" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="700">محكمة العدل</text>
+              <text x="691" y="193" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="700">الدولية</text>
+              <text x="691" y="212" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+
+              <rect x="775" y="150" width="140" height="72" rx="12" fill="#dbeafe" />
+              <text x="845" y="182" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="700">الأمانة العامة</text>
+              <text x="845" y="204" text-anchor="middle" fill="#3b82f6" font-size="12">1945</text>
+            </g>
+          </svg>
+          <figcaption class="mt-3 text-sm text-slate-500 text-center">
+            مخطط مبسط: الميثاق أنشأ الأجهزة الرئيسية الستة، وتتفرع عنها الهيئات والوكالات.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 1. الأجهزة الرئيسية الستة ================= -->
+    <section id="principal-organs" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">1</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">الأجهزة الرئيسية الستة</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            حددها الميثاق نفسه، وأُنشئت جميعها مع تأسيس المنظمة سنة 1945:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئت 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الجمعية العامة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              جهاز التداول الرئيسي؛ تضم كل الدول الأعضاء (193 دولة) بصوت واحد
+              لكل دولة، تناقش أي قضية دولية وتصدر التوصيات وتعتمد الميزانية
+              والمعاهدات، وهي التي اعتمدت الإعلان العالمي سنة 1948.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئ 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">مجلس الأمن</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفته:</strong>
+              حفظ السلم والأمن الدوليين؛ يتألف من 15 عضوًا (5 دائمون يملكون
+              حق النقض و10 منتخبون)، وقراراته ملزمة لجميع الدول، ويتدخل عند
+              الانتهاكات الجسيمة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئ 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">المجلس الاقتصادي والاجتماعي</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفته:</strong>
+              تنسيق العمل الاقتصادي والاجتماعي للمنظمة ووكالاتها؛ يضم 54 دولة
+              منتخبة، وتتبعه لجان وثيقة الصلة بالحقوق مثل لجنة وضع المرأة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئ 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">مجلس الوصاية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفته:</strong>
+              الإشراف على الأقاليم المشمولة بالوصاية الدولية حتى تنال استقلالها
+              أو حكمها الذاتي؛ أنجز مهمته التاريخية وعلّق أعماله منذ سنة 1994.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئت 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">محكمة العدل الدولية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              الجهاز القضائي الرئيسي؛ مقرها لاهاي وتتألف من 15 قاضيًا، تفصل
+              في النزاعات بين الدول وتصدر الفتاوى القانونية (باشرت عملها سنة
+              1946).
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-700 text-white text-sm font-bold">أُنشئت 1945</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الأمانة العامة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              الجهاز الإداري والتنفيذي؛ يقودها الأمين العام الذي تعيّنه الجمعية
+              العامة بتوصية من مجلس الأمن، وتنفّذ البرامج وتعدّ الدراسات وتلفت
+              النظر إلى الأزمات.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. هيئات فرعية وصناديق وبرامج ================= -->
+    <section id="subsidiary" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">2</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">هيئات فرعية وصناديق وبرامج</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            أنشأتها الأجهزة الرئيسية لمهام محددة، ومن أبرز ما يتصل منها بحقوق الإنسان:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1946</span>
+            <h3 class="font-bold text-slate-900 mb-2">لجنة وضع المرأة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              تابعة للمجلس الاقتصادي والاجتماعي؛ تضع السياسات العالمية للمساواة
+              بين الجنسين وتمكين المرأة، وأسهمت في إعداد اتفاقية سيداو.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1946</span>
+            <h3 class="font-bold text-slate-900 mb-2">اليونيسف — صندوق الأمم المتحدة للطفولة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              حماية حقوق كل طفل في الصحة والتعليم والتغذية والحماية من العنف،
+              وتعمل في أكثر من 190 دولة وإقليمًا.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1950</span>
+            <h3 class="font-bold text-slate-900 mb-2">مفوضية شؤون اللاجئين</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              حماية اللاجئين والنازحين وعديمي الجنسية حول العالم، وضمان حق
+              طلب اللجوء وإيجاد حلول دائمة لهم.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1993</span>
+            <h3 class="font-bold text-slate-900 mb-2">المفوضية السامية لحقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              قيادة جهود المنظمة في حقوق الإنسان: رصد الأوضاع حول العالم،
+              وتقديم الدعم التقني للدول، وإسناد عمل بقية الآليات؛ تتبع الأمانة
+              العامة ومقرها جنيف.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئ 2006</span>
+            <h3 class="font-bold text-slate-900 mb-2">مجلس حقوق الإنسان</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفته:</strong>
+              هيئة فرعية تابعة للجمعية العامة من 47 دولة، مقرها جنيف؛ تستعرض
+              سجل كل دول العالم دوريًا (الاستعراض الدوري الشامل) وتكلف الخبراء
+              وتتلقى الشكاوى.
+            </p>
+          </article>
+
+          <article class="card bg-blue-50/60 rounded-2xl p-6">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 2010</span>
+            <h3 class="font-bold text-slate-900 mb-2">هيئة الأمم المتحدة للمرأة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              الكيان الأممي الموحد للمساواة بين الجنسين؛ تدعم الدول في تطبيق
+              المعايير العالمية لتمكين النساء والفتيات.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. الوكالات المتخصصة ================= -->
+    <section id="agencies" class="py-20 bg-gradient-to-b from-white to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-reveal class="max-w-3xl mb-12">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">3</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">الوكالات المتخصصة</h2>
+          <p class="text-lg leading-9 text-slate-600">
+            منظمات دولية مستقلة ترتبط بالأمم المتحدة عبر المجلس الاقتصادي
+            والاجتماعي، ومن أبرزها:
+          </p>
+        </div>
+
+        <div data-stagger class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1919</span>
+            <h3 class="font-bold text-slate-900 mb-2">منظمة العمل الدولية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              وضع معايير العمل الدولية وحماية حقوق العمال؛ أقدم الوكالات،
+              وأول وكالة متخصصة تنضم للمنظومة سنة 1946.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1945</span>
+            <h3 class="font-bold text-slate-900 mb-2">اليونسكو</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              التربية والعلم والثقافة: تدعم الحق في التعليم وتحمي التراث
+              وحرية التعبير والصحافة.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1945</span>
+            <h3 class="font-bold text-slate-900 mb-2">منظمة الأغذية والزراعة</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              مكافحة الجوع وضمان الأمن الغذائي، دعمًا للحق في غذاء كافٍ
+              ومستوى معيشي لائق.
+            </p>
+          </article>
+
+          <article class="card bg-white rounded-2xl p-6 shadow-sm border border-blue-100">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold">أُنشئت 1948</span>
+            <h3 class="font-bold text-slate-900 mb-2">منظمة الصحة العالمية</h3>
+            <p class="text-sm leading-7 text-slate-600">
+              <strong class="text-slate-800">وظيفتها:</strong>
+              قيادة العمل الصحي الدولي وبلوغ أعلى مستوى صحي ممكن لكل إنسان،
+              إعمالًا للحق في الصحة.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= خاتمة الصفحة ================= -->
+    <section id="conclusion" class="py-20">
+      <div data-reveal class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6">متى أُنشئ كل ذلك؟</h2>
+        <p class="text-lg leading-9 text-slate-600 mb-10">
+          تابع في الصفحة التالية الخط الزمني الكامل: متى صدرت المعاهدات
+          والمواثيق، ومتى تأسس كل جهاز، مرتبة عامًا بعام.
+        </p>
+        <a href="timeline.html"
+           class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-700 text-white font-bold shadow-lg shadow-blue-700/20 hover:bg-blue-800 transition duration-300">
+          الخط الزمني لحقوق الإنسان
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+               stroke="currentColor" class="w-5 h-5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= التنقل بين الصفحات ================= -->
+  <nav aria-label="التنقل بين الصفحات" class="border-t border-blue-100 bg-blue-50/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid gap-4 sm:grid-cols-2">
+
+      <a href="mechanisms.html" class="card group flex items-center gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <span>
+          <span class="block text-sm text-slate-500 mb-1">الصفحة السابقة</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">آليات ضمان حقوق الإنسان</span>
+        </span>
+      </a>
+
+      <a href="timeline.html" class="card group flex items-center justify-end gap-4 bg-white rounded-2xl p-5 border border-blue-100 shadow-sm">
+        <span class="text-end">
+          <span class="block text-sm text-slate-500 mb-1">الصفحة التالية</span>
+          <span class="block font-bold text-slate-900 group-hover:text-blue-700 transition duration-300">الخط الزمني لحقوق الإنسان</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+             stroke="currentColor" class="w-5 h-5 shrink-0 text-blue-700" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- ================= التذييل ================= -->
+  <footer class="border-t border-blue-100 bg-white">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-500 text-center">
+      موقع تعليمي غير ربحي — المحتوى مستند إلى الإعلان العالمي لحقوق الإنسان (1948).
+    </p>
+  </footer>
+
+  <!-- Motion (النسخة المستقلة من محرك Framer Motion) -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
